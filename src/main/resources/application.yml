@@ -10,3 +10,7 @@ spring:
         uri: http://localhost:8844/
         predicates:
         - Path=/client-api/**
+      - id: LOADSERVICE_MONITORING
+        uri: http://localhost:8000/
+        predicates:
+        - Path=/actuator/**
